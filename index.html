@@ -39,7 +39,7 @@
         </div>
 
         <!-- Introduzione -->
-        <div class="grey lighten-5" style="padding: 5%" id="intro">
+        <div class="grey lighten-5 scrollspy" style="padding: 5%" id="intro">
             <div class="container">
 
                 <div class=''>
@@ -102,15 +102,15 @@
         </div>
 
         <!-- Firme -->
-        <div style="padding: 5%" id="firme">
+        <div style="padding: 5%" id="firme" class="scrollspy">
             <div class="container center">
                 <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;">La firma di Mussolini</h4>
                 <p><i>Prima della Seconda Guerra Mondiale</i></p>
                 <img src='img/muss_prima.png' style="width: 100%; height: 100%">
                 <p>
                     Scrittura molto larga, espansiva e vigorosa, rappresenta una grande autostima, ovvero una persona molto sicura di sé stessa.
-                    I puntini sulle i sono a destra quindi era molto veloce nel ragionamento e proiettato nel futuro. La zona inferiore delle parole
-                    è molto lunga ovvero aveva molta ambizione.
+                    I puntini sulle i sono a destra significando molta velocità nel ragionamento e proiezione verso il futuro. La zona inferiore delle parole
+                    è molto lunga sehnale di una persona molto ambiziosa.
 
                 </p><br>
                 <p><i>Uno degli ultimi documenti firmati</i></p>
@@ -124,7 +124,7 @@
         </div>
 
         <!-- Grafoterapia -->
-        <div class="grey lighten-5" style="padding: 5%" id="grafoterapia">
+        <div class="grey lighten-5 scrollspy" style="padding: 5%" id="grafoterapia">
             <div class="container">
                 <h4 class='center' style="font-family: 'Poppins', sans-serif; font-size: 25px;">Un esempio di grafoterapia</h4>
                 <h4 style="font-family: 'Poppins', sans-serif; font-size: 20px;">Esercizio per la <b>fluidità di pensiero</b></h4>
@@ -164,7 +164,8 @@
                     La frase seguente è un ottimo esercizio per scrivere th con le legature: <br>
                 </p>
                 <p class="center">
-                    <i>"Then the thicket thinned though the thistles threadtened through the thick leather thongs"</i>
+                    <i>"Then the thicket thinned though the thistles threadtened through the thick leather thongs"</i><br>
+                    <i>Trad.: "Poi il boschetto si è diradato anche se i cardi incombevano attraverso le spesse cinghie di cuoio"</i>
                 </p>
                 <p>Se la vostra scrittura presenta già questa legatura, cimnetatevi con un altro tratto che è la cosiddetta <i>g a forma di otto</i></p>
                 IMMAGINE
@@ -187,14 +188,34 @@
         </div>
 
         <!-- Programma -->
-        <div style="padding: 5%" id="software">
-            <div class="container center">
-                <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;">Il software</h4>
+        <div style="padding: 5%" id="software" class="scrollspy">
+            <div class="container">
+                <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;" class="center">Il software</h4>
+                <h4 style="font-family: 'Poppins', sans-serif; font-size: 20px;">Premessa</h4>
+                <p>
+                    Ho voluto realizzare un programma che sapesse riconoscere all'interno di un'immagine con del testo scritto a mano le varie tipologie
+                    di lettere. Tramite questo riconoscimento sarò poi in grado di associare ad ogni immagine trovata il corrispondente significato.
+                </p>
+                <h4 style="font-family: 'Poppins', sans-serif; font-size: 20px;">Funzionamento</h4>
+                <p>
+                    Utilizzando la libreria di opencv sono riuscito a generare un file xml chiamato HaarCascade. Questo file è il risultato dell'elaborazione 
+                    di una rete neurale per il riconoscimento delle immagini. <br>
+                    Una volta creata una struttura, come in immagine, composta da una cartella di immagini positive(utili per il riconoscimento) e una cartella
+                    di immagini negative (immagini ad esempio di sfondo) tramite alcuni comandi da terminale ho generato il file xml.<br>
+                    <img src='img/struttura.png' style="width: 70%; height: 100%"><br><br>
+                    Per ogni immagine positiva ho dovuto selezionare poi l'area da identificare.<br><br>
+                    <img src='img/identificazione.png' style="width: 70%; height: 100%"><br><br>
+                    Ed infine ho generato il file xml.<br><br>
+                    <img src='img/file_xml.png' style="width: 70%; height: 100%"><br><br>
+                    Successivamente ho creato un progetto Java con l'aggiunta della libreria di opencv per fare in modo che venga evidenziato in un'immagine, l'immagine
+                    del carattere trovato.<br>
+                    IMMAGINE
+                </p>
             </div>
         </div>
 
         <!-- Bibliografia -->
-        <div class="grey lighten-5">
+        <div class="grey lighten-5 scrollspy">
             <div class='container' id="bibliografia" style="padding: 5%">
                 <h4 class='center' style="font-family: 'Poppins', sans-serif; font-size: 25px;">Bibliografia</h4>
                 <div class="w3-section">
@@ -204,7 +225,7 @@
                     <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i><a href="http://www.grafologia360.com/grafologia/"> www.grafologia360.com/grafologia</a></p>
                     <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i><a href="http://www.giacomobruno.it/index.php/2010/12/30/
                                                                                           come-migliorare-se-stessi-e-correggere-cattive-abitudini-con-la-grafoterapia/"> www.giacomobruno.it</a></p>
-
+                    <p><i class="fa fa-file-text fa-fw  w3-xlarge w3-margin-right"></i><a href="https://www.cs.auckland.ac.nz/~m.rezaei/Tutorials/Creating_a_Cascade_of_Haar-Like_Classifiers_Step_by_Step.pdf"> www.cs.auckland.ac.nz</a></p>
                 </div>
             </div>
         </div>
@@ -221,6 +242,11 @@
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.scrollspy').scrollSpy({scrollOffset : 0});
+            });
+        </script>
     </body>
 </html>
 
