@@ -108,7 +108,8 @@
 
                     <p class="w3-justify">
                         La grafologia è una tecnica che permette di dedurre alcune caratteristiche psicologiche di un individuo
-                        attraverso la sua grafia.<br> La metodologia d'indagine parte dal presupposto che la scrittura, superate le
+                        attraverso la sua grafia. La validità di questa tecnica non è mai stata provata scientificamente.<br> 
+                        La metodologia d'indagine parte dal presupposto che la scrittura, superate le
                         fasi di apprendimento, diventa un processo automatico, risultato delle risposte motorie ai circuiti neurali. 
                         Il principio base della grafologia risiede nel fatto che la grafia scritta in modo spontaneo lascia nero su
                         bianco delle tracce altamente identificatrici che distinguono non solo una persona rispetto ad un'altra ma
@@ -126,7 +127,9 @@
                         2. La zona <b>sinistra</b> rappresenta il rapporto con la mamma e con il passato <br>
                         3. La zona <b>inferiore</b> rappresenta la terra ovvero il piacere mondano, i soldi e la sessualità <br>
                         4. La zona <b>destra</b> rappresenta il futuro e il legame paterno<br>
-                        5. La zona <b>centrale</b> invece rappresenta l'io, l'individuo
+                        5. La zona <b>centrale</b> invece rappresenta l'io, l'individuo <br><br>
+                        
+                        <img src='img/segni.png' style="width: 100%; height: 100%">
                         <!--/div-->
                     </p>
                     <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;">Per cosa viene utilizzata la grafologia?</h4>
@@ -137,8 +140,8 @@
                         <li class='collection-item'>Nella scelta del personale o nella riqualificazione di dipendenti già inquadrati</li>
                         <li class='collection-item'>Per l'analisi del rapporto di coppia ovvero cogliere i punti di forza e di debolezza della propria relazione</li>
                         <li class='collection-item'>Per una ricerca di sé, per conoscere i propri punti di forza e di debolezza, i propri limiti e le proprie potenzialità</li>
-                        <li class='collection-item'>Per la grafoterapia ovvero una rieducazione alla scrittura; in particolare di quelle lettere
-                            , segni e tratti che hanno bisogno di essere corretti al fine di migliorare la condotta e la personalità</li>
+                        <li class='collection-item'>Per la grafoterapia ovvero una rieducazione alla scrittura; in particolare di quelle lettere, segni e tratti che hanno 
+                            bisogno di essere corretti al fine di migliorare la condotta e la personalità</li>
                     </ul>
                     <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;">Come si effettua un'analisi grafologica</h4>
                     <p>
@@ -252,9 +255,11 @@
                 <h4 style="font-family: 'Poppins', sans-serif; font-size: 25px;" class="center">Il software</h4>
                 <h4 style="font-family: 'Poppins', sans-serif; font-size: 20px;">Premessa</h4>
                 <p>
-                    Ho voluto realizzare un programma che sapesse riconoscere all'interno di un'immagine con del testo scritto a mano le varie tipologie
+                    Ho voluto realizzare un programma per la classificazione della scrittura che potrà essere applicato e provato nel settore della grafologia 
+                    per riconoscere all'interno di un'immagine con del testo scritto a mano le varie tipologie
                     di lettere. Tramite questo riconoscimento sarò poi in grado di associare ad ogni immagine trovata il corrispondente significato.
                 </p>
+                <img src='img/es_software.png' style="width: 100%; height: 100%">
                 <h4 style="font-family: 'Poppins', sans-serif; font-size: 20px;">Funzionamento</h4>
                 <p>
                     Utilizzando la libreria di opencv sono riuscito a generare un file xml chiamato HaarCascade. Questo file è il risultato dell'elaborazione 
@@ -266,7 +271,7 @@
                     Ed infine ho generato il file xml.<br><br>
                     <img src='img/file_xml.png' style="width: 70%; height: 100%"><br><br>
                     Successivamente ho creato un progetto Java con l'aggiunta della libreria di opencv per fare in modo che venga evidenziato in un'immagine, l'immagine
-                    del carattere trovato.<br>
+                    del carattere trovato.<br><br>
                     <img src='img/codice.png' style="width: 100%; height: 100%"><br><br>
                     Link al repository Git: <a href='https://github.com/lucabonfante/TextDetector'>https://github.com/lucabonfante/TextDetector</a>
                 </p>
